@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA9A36B115E151AB00F6C608 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9A36B015E151AB00F6C608 /* Cocoa.framework */; };
+		DA9A36BB15E151AB00F6C608 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9A36B915E151AB00F6C608 /* InfoPlist.strings */; };
+		DA9A36BD15E151AB00F6C608 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A36BC15E151AB00F6C608 /* main.m */; };
+		DA9A36C415E151AB00F6C608 /* DNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A36C315E151AB00F6C608 /* DNAppDelegate.m */; };
+		DA9A36C715E151AB00F6C608 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA9A36C515E151AB00F6C608 /* MainMenu.xib */; };
+		DA9A36CF15E151AB00F6C608 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9A36CE15E151AB00F6C608 /* SenTestingKit.framework */; };
+		DA9A36D015E151AB00F6C608 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9A36B015E151AB00F6C608 /* Cocoa.framework */; };
+		DA9A36D815E151AB00F6C608 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9A36D615E151AB00F6C608 /* InfoPlist.strings */; };
+		DA9A36DB15E151AB00F6C608 /* MailCountTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9A36DA15E151AB00F6C608 /* MailCountTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA9A36D115E151AB00F6C608 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA9A36A315E151AB00F6C608 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA9A36AB15E151AB00F6C608;
+			remoteInfo = MailCount;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA9A36AC15E151AB00F6C608 /* MailCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9A36B015E151AB00F6C608 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DA9A36B315E151AB00F6C608 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DA9A36B415E151AB00F6C608 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DA9A36B515E151AB00F6C608 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA9A36B815E151AB00F6C608 /* MailCount-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MailCount-Info.plist"; sourceTree = "<group>"; };
+		DA9A36BA15E151AB00F6C608 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA9A36BC15E151AB00F6C608 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA9A36BE15E151AB00F6C608 /* MailCount-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MailCount-Prefix.pch"; sourceTree = "<group>"; };
+		DA9A36C215E151AB00F6C608 /* DNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNAppDelegate.h; sourceTree = "<group>"; };
+		DA9A36C315E151AB00F6C608 /* DNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNAppDelegate.m; sourceTree = "<group>"; };
+		DA9A36C615E151AB00F6C608 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DA9A36CD15E151AB00F6C608 /* MailCountTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MailCountTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA9A36CE15E151AB00F6C608 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		DA9A36D515E151AB00F6C608 /* MailCountTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MailCountTests-Info.plist"; sourceTree = "<group>"; };
+		DA9A36D715E151AB00F6C608 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA9A36D915E151AB00F6C608 /* MailCountTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailCountTests.h; sourceTree = "<group>"; };
+		DA9A36DA15E151AB00F6C608 /* MailCountTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MailCountTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA9A36A915E151AB00F6C608 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9A36B115E151AB00F6C608 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA9A36C915E151AB00F6C608 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9A36CF15E151AB00F6C608 /* SenTestingKit.framework in Frameworks */,
+				DA9A36D015E151AB00F6C608 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA9A36A115E151AB00F6C608 = {
+			isa = PBXGroup;
+			children = (
+				DA9A36B615E151AB00F6C608 /* MailCount */,
+				DA9A36D315E151AB00F6C608 /* MailCountTests */,
+				DA9A36AF15E151AB00F6C608 /* Frameworks */,
+				DA9A36AD15E151AB00F6C608 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA9A36AD15E151AB00F6C608 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA9A36AC15E151AB00F6C608 /* MailCount.app */,
+				DA9A36CD15E151AB00F6C608 /* MailCountTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA9A36AF15E151AB00F6C608 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA9A36B015E151AB00F6C608 /* Cocoa.framework */,
+				DA9A36CE15E151AB00F6C608 /* SenTestingKit.framework */,
+				DA9A36B215E151AB00F6C608 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA9A36B215E151AB00F6C608 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA9A36B315E151AB00F6C608 /* AppKit.framework */,
+				DA9A36B415E151AB00F6C608 /* CoreData.framework */,
+				DA9A36B515E151AB00F6C608 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DA9A36B615E151AB00F6C608 /* MailCount */ = {
+			isa = PBXGroup;
+			children = (
+				DA9A36C215E151AB00F6C608 /* DNAppDelegate.h */,
+				DA9A36C315E151AB00F6C608 /* DNAppDelegate.m */,
+				DA9A36C515E151AB00F6C608 /* MainMenu.xib */,
+				DA9A36B715E151AB00F6C608 /* Supporting Files */,
+			);
+			path = MailCount;
+			sourceTree = "<group>";
+		};
+		DA9A36B715E151AB00F6C608 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA9A36B815E151AB00F6C608 /* MailCount-Info.plist */,
+				DA9A36B915E151AB00F6C608 /* InfoPlist.strings */,
+				DA9A36BC15E151AB00F6C608 /* main.m */,
+				DA9A36BE15E151AB00F6C608 /* MailCount-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA9A36D315E151AB00F6C608 /* MailCountTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA9A36D915E151AB00F6C608 /* MailCountTests.h */,
+				DA9A36DA15E151AB00F6C608 /* MailCountTests.m */,
+				DA9A36D415E151AB00F6C608 /* Supporting Files */,
+			);
+			path = MailCountTests;
+			sourceTree = "<group>";
+		};
+		DA9A36D415E151AB00F6C608 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA9A36D515E151AB00F6C608 /* MailCountTests-Info.plist */,
+				DA9A36D615E151AB00F6C608 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA9A36AB15E151AB00F6C608 /* MailCount */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA9A36DE15E151AB00F6C608 /* Build configuration list for PBXNativeTarget "MailCount" */;
+			buildPhases = (
+				DA9A36A815E151AB00F6C608 /* Sources */,
+				DA9A36A915E151AB00F6C608 /* Frameworks */,
+				DA9A36AA15E151AB00F6C608 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MailCount;
+			productName = MailCount;
+			productReference = DA9A36AC15E151AB00F6C608 /* MailCount.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA9A36CC15E151AB00F6C608 /* MailCountTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA9A36E115E151AB00F6C608 /* Build configuration list for PBXNativeTarget "MailCountTests" */;
+			buildPhases = (
+				DA9A36C815E151AB00F6C608 /* Sources */,
+				DA9A36C915E151AB00F6C608 /* Frameworks */,
+				DA9A36CA15E151AB00F6C608 /* Resources */,
+				DA9A36CB15E151AB00F6C608 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA9A36D215E151AB00F6C608 /* PBXTargetDependency */,
+			);
+			name = MailCountTests;
+			productName = MailCountTests;
+			productReference = DA9A36CD15E151AB00F6C608 /* MailCountTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA9A36A315E151AB00F6C608 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DN;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = DA9A36A615E151AB00F6C608 /* Build configuration list for PBXProject "MailCount" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DA9A36A115E151AB00F6C608;
+			productRefGroup = DA9A36AD15E151AB00F6C608 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA9A36AB15E151AB00F6C608 /* MailCount */,
+				DA9A36CC15E151AB00F6C608 /* MailCountTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA9A36AA15E151AB00F6C608 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9A36BB15E151AB00F6C608 /* InfoPlist.strings in Resources */,
+				DA9A36C715E151AB00F6C608 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA9A36CA15E151AB00F6C608 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9A36D815E151AB00F6C608 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DA9A36CB15E151AB00F6C608 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA9A36A815E151AB00F6C608 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9A36BD15E151AB00F6C608 /* main.m in Sources */,
+				DA9A36C415E151AB00F6C608 /* DNAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA9A36C815E151AB00F6C608 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9A36DB15E151AB00F6C608 /* MailCountTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA9A36D215E151AB00F6C608 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA9A36AB15E151AB00F6C608 /* MailCount */;
+			targetProxy = DA9A36D115E151AB00F6C608 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DA9A36B915E151AB00F6C608 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA9A36BA15E151AB00F6C608 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DA9A36C515E151AB00F6C608 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA9A36C615E151AB00F6C608 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		DA9A36D615E151AB00F6C608 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA9A36D715E151AB00F6C608 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA9A36DC15E151AB00F6C608 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DA9A36DD15E151AB00F6C608 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DA9A36DF15E151AB00F6C608 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MailCount/MailCount-Prefix.pch";
+				INFOPLIST_FILE = "MailCount/MailCount-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DA9A36E015E151AB00F6C608 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MailCount/MailCount-Prefix.pch";
+				INFOPLIST_FILE = "MailCount/MailCount-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DA9A36E215E151AB00F6C608 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MailCount.app/Contents/MacOS/MailCount";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MailCount/MailCount-Prefix.pch";
+				INFOPLIST_FILE = "MailCountTests/MailCountTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DA9A36E315E151AB00F6C608 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MailCount.app/Contents/MacOS/MailCount";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MailCount/MailCount-Prefix.pch";
+				INFOPLIST_FILE = "MailCountTests/MailCountTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA9A36A615E151AB00F6C608 /* Build configuration list for PBXProject "MailCount" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9A36DC15E151AB00F6C608 /* Debug */,
+				DA9A36DD15E151AB00F6C608 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA9A36DE15E151AB00F6C608 /* Build configuration list for PBXNativeTarget "MailCount" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9A36DF15E151AB00F6C608 /* Debug */,
+				DA9A36E015E151AB00F6C608 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DA9A36E115E151AB00F6C608 /* Build configuration list for PBXNativeTarget "MailCountTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9A36E215E151AB00F6C608 /* Debug */,
+				DA9A36E315E151AB00F6C608 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA9A36A315E151AB00F6C608 /* Project object */;
+}
