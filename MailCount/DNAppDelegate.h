@@ -10,12 +10,8 @@
 
 @interface DNAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
-
 @property (nonatomic, retain) NSStatusItem* statusItem;
-
 @property (nonatomic, retain) IBOutlet NSMenu* menu;
-
-
+@property (nonatomic) NSUInteger activity;
 
 @end
