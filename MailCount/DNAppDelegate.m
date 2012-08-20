@@ -21,13 +21,12 @@
 }
 
 - (void) refreshMailCount {
-//    NSLog(@"refresh");
+
     NSFileManager * fm = [NSFileManager new];
     
     NSString * maildirNew = NSHomeDirectory();
     
     maildirNew = [NSString stringWithFormat:@"%@/Maildir/INBOX/new", maildirNew];
-//    NSLog(@"%@", maildirNew);
     
     NSError* error = nil;
     
@@ -39,14 +38,14 @@
 }
 
 - (void) quitProgram {
-//    NSLog(@"quit");
-    
+
     [NSApp performSelector:@selector(terminate:) withObject:nil afterDelay:0.0f];
     
 }
 
 - (void) awakeFromNib {
-    self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    self.statusItem = [[NSStatusBar systemStatusBar] 
+                       statusItemWithLength:NSVariableStatusItemLength];
     [self.statusItem setMenu:self.menu];
     [self.statusItem setTitle:@"Mail"];
     [self.statusItem setHighlightMode:YES];
@@ -55,17 +54,14 @@
     [self.menu addItemWithTitle:@"Quit" action:@selector(quitProgram) keyEquivalent:@"?"];
     
     NSTimer* timer;
-
     timer = [NSTimer timerWithTimeInterval:1.0f
                                     target:self 
                                   selector:@selector(refreshMailCount) 
                                   userInfo:nil 
                                    repeats:YES];
     
-    
     NSRunLoop *runloop = [NSRunLoop currentRunLoop];
     [runloop addTimer:timer forMode:NSRunLoopCommonModes];
-    
     
 }
 

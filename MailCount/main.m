@@ -3,7 +3,7 @@
 //  MailCount
 //
 //  Created by Paul van der Walt on 19/08/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 denknerd.org. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
