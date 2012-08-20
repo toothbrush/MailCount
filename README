@@ -1,2 +1,4 @@
 This is a little tool which runs in the background and tells you the number of
-files present in ~/Maildir/INBOX/new. Useful for my offlineimap setup.
+files present in ~/Maildir/INBOX/new. Useful for my offlineimap [1] setup.
+
+1. OfflineIMAP http://offlineimap.org/
