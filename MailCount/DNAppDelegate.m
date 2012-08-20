@@ -75,11 +75,11 @@ static NSArray * chars;
     self.statusItem = [[NSStatusBar systemStatusBar] 
                        statusItemWithLength:NSVariableStatusItemLength];
     [self.statusItem setMenu:self.menu];
-    [self.statusItem setTitle:@"Mail"];
+    [self.statusItem setTitle:@"MailCount"];
     [self.statusItem setHighlightMode:YES];
             
     [self.menu removeAllItems];
-    [self.menu addItemWithTitle:@"Quit" action:@selector(quitProgram) keyEquivalent:@"?"];
+    [self.menu addItemWithTitle:@"Quit" action:@selector(quitProgram) keyEquivalent:@"q"];
     
     NSTimer* timer;
     timer = [NSTimer timerWithTimeInterval:1.0f
