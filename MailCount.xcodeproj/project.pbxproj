@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA2321131679CE66000C9D5B /* raise-mutt.scpt in Resources */ = {isa = PBXBuildFile; fileRef = DA2321121679CE65000C9D5B /* raise-mutt.scpt */; };
 		DA3BF45015E2E24100FA7EA8 /* DNShell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3BF44F15E2E24100FA7EA8 /* DNShell.m */; };
 		DA9A36B115E151AB00F6C608 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9A36B015E151AB00F6C608 /* Cocoa.framework */; };
 		DA9A36BB15E151AB00F6C608 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9A36B915E151AB00F6C608 /* InfoPlist.strings */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA2321121679CE65000C9D5B /* raise-mutt.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = "raise-mutt.scpt"; sourceTree = "<group>"; };
 		DA3BF44E15E2E24100FA7EA8 /* DNShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNShell.h; sourceTree = "<group>"; };
 		DA3BF44F15E2E24100FA7EA8 /* DNShell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNShell.m; sourceTree = "<group>"; };
 		DA9A36AC15E151AB00F6C608 /* MailCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +100,7 @@
 		DA9A36B715E151AB00F6C608 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DA2321121679CE65000C9D5B /* raise-mutt.scpt */,
 				DA9A36B815E151AB00F6C608 /* MailCount-Info.plist */,
 				DA9A36B915E151AB00F6C608 /* InfoPlist.strings */,
 				DA9A36BC15E151AB00F6C608 /* main.m */,
@@ -159,6 +162,7 @@
 			files = (
 				DA9A36BB15E151AB00F6C608 /* InfoPlist.strings in Resources */,
 				DA9A36C715E151AB00F6C608 /* MainMenu.xib in Resources */,
+				DA2321131679CE66000C9D5B /* raise-mutt.scpt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface DNAppDelegate : NSObject <NSApplicationDelegate>
+@interface DNAppDelegate : NSObject <NSApplicationDelegate, NSMenuDelegate>
 
 @property (nonatomic, retain) NSStatusItem* statusItem;
 @property (nonatomic, retain) IBOutlet NSMenu* menu;

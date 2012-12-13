@@ -53,9 +53,9 @@ static NSArray * chars;
     
     if (!error) {
         if ([procarray count] == 0) {
-            [self.statusItem setTitle:[NSString stringWithFormat:@"m: %d", [files count]]];
+            [self.statusItem setTitle:[NSString stringWithFormat:@"m: %ld", [files count]]];
         } else {
-            [self.statusItem setTitle:[NSString stringWithFormat:@"m: %d %@", 
+            [self.statusItem setTitle:[NSString stringWithFormat:@"m: %ld %@", 
                                        [files count], 
                                        [chars objectAtIndex:activity]]];
         }
@@ -71,16 +71,36 @@ static NSArray * chars;
     
 }
 
+- (void) raiseMailClient {
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"raise-mutt" ofType:@"scpt"];
+    NSURL* url = [NSURL fileURLWithPath:path];
+    NSDictionary* errors = [NSDictionary dictionary];
+    NSAppleScript* appleScript = [[NSAppleScript alloc] initWithContentsOfURL:url error:&errors];
+    [appleScript executeAndReturnError:nil];
+    
+}
+
+- (void)menuWillOpen:(NSMenu *)menu
+{
+    // main menu was clicked.
+    
+    [self raiseMailClient];
+    
+}
+
 - (void) awakeFromNib {
     self.statusItem = [[NSStatusBar systemStatusBar] 
                        statusItemWithLength:NSVariableStatusItemLength];
     [self.statusItem setMenu:self.menu];
     [self.statusItem setTitle:@"MailCount"];
     [self.statusItem setHighlightMode:YES];
-            
-    [self.menu removeAllItems];
-    [self.menu addItemWithTitle:@"Quit" action:@selector(quitProgram) keyEquivalent:@"q"];
     
+    [self.menu setDelegate:self];
+    
+    [self.menu removeAllItems];
+
+    //    [self.menu addItemWithTitle:@"Quit" action:@selector(quitProgram) keyEquivalent:@"q"];
+
     NSTimer* timer;
     timer = [NSTimer timerWithTimeInterval:1.0f
                                     target:self 
