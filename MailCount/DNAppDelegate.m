@@ -72,7 +72,7 @@ static NSArray * chars;
 }
 
 - (void) raiseMailClient {
-    NSString* path = [[NSBundle mainBundle] pathForResource:@"raise-mutt" ofType:@"scpt"];
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"raise-client" ofType:@"scpt"];
     NSURL* url = [NSURL fileURLWithPath:path];
     NSDictionary* errors = [NSDictionary dictionary];
     NSAppleScript* appleScript = [[NSAppleScript alloc] initWithContentsOfURL:url error:&errors];
