@@ -35,10 +35,13 @@ static NSArray * chars;
     NSFileManager * fm = [NSFileManager new];
     
     NSString * maildirNew = NSHomeDirectory();
-    maildirNew = [NSString stringWithFormat:@"%@/Maildir/INBOX/new", maildirNew];
+    maildirNew = [NSString stringWithFormat:@"%@/Maildir/Gmail/INBOX/new", maildirNew];
+    NSString * maildirNewWork = NSHomeDirectory();
+    maildirNewWork = [NSString stringWithFormat:@"%@/Maildir/INRIA/INBOX/new", maildirNewWork];
     
     NSError* error = nil;
     NSArray * files = [fm contentsOfDirectoryAtPath:maildirNew error:&error];
+    NSArray * filesWork = [fm contentsOfDirectoryAtPath:maildirNewWork error:&error];
     
     // get a list of running processes
     NSString* procs = [DNShell doshellscript:@"/bin/ps"
@@ -53,10 +56,10 @@ static NSArray * chars;
     
     if (!error) {
         if ([procarray count] == 0) {
-            [self.statusItem setTitle:[NSString stringWithFormat:@"m: %ld", [files count]]];
+            [self.statusItem setTitle:[NSString stringWithFormat:@"m: %ld, %ld", [files count], [filesWork count]]];
         } else {
-            [self.statusItem setTitle:[NSString stringWithFormat:@"m: %ld %@", 
-                                       [files count], 
+            [self.statusItem setTitle:[NSString stringWithFormat:@"m: %ld, %ld %@",
+                                       [files count], [filesWork count],
                                        [chars objectAtIndex:activity]]];
         }
     } else {
