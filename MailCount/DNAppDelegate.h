@@ -12,6 +12,11 @@
 
 @property (nonatomic, retain) NSStatusItem* statusItem;
 @property (nonatomic, retain) IBOutlet NSMenu* menu;
+@property (nonatomic, retain) IBOutlet NSMenuItem* pause;
 @property (nonatomic) NSUInteger activity;
+
+- (IBAction)quitProgram: (id)sender;
+- (IBAction)checkNow:(id)sender;
+- (IBAction)pause:(id)sender;
 
 @end
