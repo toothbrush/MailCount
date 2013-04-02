@@ -122,19 +122,32 @@ static NSArray * chars;
 - (void) raiseMailClient {
     NSString* path = [[NSBundle mainBundle] pathForResource:@"raise-client" ofType:@"scpt"];
     NSURL* url = [NSURL fileURLWithPath:path];
-    NSDictionary* errors = [NSDictionary dictionary];
+    NSDictionary* errors;
     NSAppleScript* appleScript = [[NSAppleScript alloc] initWithContentsOfURL:url error:&errors];
-    [appleScript executeAndReturnError:nil];
+    NSDictionary* err;
+    [appleScript executeAndReturnError:&err];
+    if (err) {
+        NSLog(@"errors = %@", err);
+    }
+    NSLog(@"path = %@", path);
+    if (errors) {
+        NSLog(@"errors2 = %@", errors);
+        NSLog(@"apples = %@", appleScript);
+    }
+    
     
 }
 
-- (void)menuWillOpen:(NSMenu *)menu
-{
+- (void)menuWillOpen {
     // status bar item was clicked.
-    BOOL commandKeyDown = (([[NSApp currentEvent] modifierFlags] & NSCommandKeyMask) == NSCommandKeyMask);
+    BOOL commandKeyDown = (([[NSApp currentEvent] modifierFlags] & NSCommandKeyMask)
+                           == NSCommandKeyMask);
     
     if (!commandKeyDown) {
         [self raiseMailClient];
+    } else {
+        // just open menu
+        [self.statusItem popUpStatusItemMenu:self.menu];
     }
 
 }
@@ -142,11 +155,12 @@ static NSArray * chars;
 - (void) awakeFromNib {
     self.statusItem = [[NSStatusBar systemStatusBar] 
                        statusItemWithLength:NSVariableStatusItemLength];
-    [self.statusItem setMenu:self.menu];
+
     [self.statusItem setTitle:@"MailCount"];
     [self.statusItem setHighlightMode:YES];
-    
-    [self.menu setDelegate:self];
+
+    self.statusItem.target = self;
+    self.statusItem.action = @selector(menuWillOpen);
 
     NSTimer* timer;
     timer = [NSTimer timerWithTimeInterval:1.0f
